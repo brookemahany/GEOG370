@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "shellpetro",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "id": null }, "geometry": { "type": "Point", "coordinates": [ -80.336638888506442, 40.669834980475422 ] } }
-]
-}
