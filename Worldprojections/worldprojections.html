@@ -4,26 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projections</title>
+    <style>
+        
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #bbb1a2;
+            color: #0a460a;
+            text-align: left;
+            font-size: xx-large;
+        }
+        h1{
+            display: block;
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>In this project I learned how to display images in different projections</h1>
+    <h1>Homework 3</h1>
     
-    <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+    <p>Describe in your own words how you displayed the map in different projections using QGIS</p>
+    <p>To change the projection of a map in QGIS, you will want to do click on the bottom right corner of the screen. There will be an ESPG/ESRI code with a small globe
+        icon. This will take you to the project Coordinate Reference System setting. This will change how the data is displayed once you enter the code or name of a new 
+        projection into the search bar and click "OK" or "apply". 
+    </p>
     
-    <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
-    <a href=".//maps/4326.png">
-    <img src=".//maps/4326.png" alt="WGS84" width='500px'>
+    <h2>Mercator Projection</h2>
+    <body>Cylindrical projection which stretches oblongly moving towards the poles; parts of the map are somewhat compressed and stretched horizontally, 
+        as well as generally enlarged to almost twice their actual size.</body>
+    <a href=".//maps/mercator.png">
+    <img src=".//maps/mercator.png" alt="Mercator" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
-    <a href=".//maps/54043.png">
-    <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
+    <p>Azimuthal projection which distorts size closer to poles as well as to the far right and left sides of the map. Stretches features near the poles 
+        vertically compared to horizontally with Mercator.</p>
+    <a href=".//maps/aitoff.png">
+    <img src=".//maps/aitoff.png" alt="Aitoff" width='500px'>
     </a>
-    <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
-    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
-    <p></p>
+    <h2>Pseudo-Mercator Projection</h2>
+    <p>Cylindrical projection which preserves shape with great distortions in size further from the equator. </p>
+    <a href=".//maps/pseudomercator.png">
+    <img src=".//maps/pseudomercator.png" alt="Pseudo-Mercator" width='500px'>
+    </a>
+    <h2>Winkel I Projection</h2>
+    <p>Pseudocylindrical projection with vertical distortions away from the equator, though distinct from Aitoff due to being less concave at the poles.</p>
+    <a href=".//maps/winkel1.png">
+    <img src=".//maps/winkel1.png" alt="Winkel 1" width='500px'>
+    </a>
+    <h2>Cylindrical Equal Area Projection</h2>
+    <p>Cylindrical projection which horizontally compresses shape at the poles to a more extreme degree than Mercator. </p>
+    <a href=".//maps/cylindricaleqarea.png">
+    <img src=".//maps/cylindricaleqarea.png" alt="Cylindrical Equal Area" width='500px'>
+    </a>
+    <h2> Equidistant Conic Projection</h2>
+    <p>Conic projection with severe distortion towards the opposite pole from the standard parallel (in this case the South pole).</p>
+    <a href=".//maps/equidistantconic.png">
+    <img src=".//maps/equidistantconic.png" alt="Equidistant Conic" width='500px'>
+    </a>
+    <h2>Azimuthal Equidistant Projection</h2>
+    <p>Azimuthal projection similar to Equidistant Conic in that it stretches horizontally with distance from the pole of focus. </p>
+    <a href=".//maps/azimuthalequidistant.png">
+    <img src=".//maps/azimuthalequidistant.png" alt="Azimuthal Equidistant" width='500px'>
+    </a>
+    <h2>Bonne Projection</h2>
+    <p>Psuedoconical projection which preserves shape at the central meridian and at the pole of focus. Distorts angles and distance. 
+        The outline forms the shape of a heart.
+    </p>
+    <a href=".//maps/bonne.png">
+    <img src=".//maps/bonne.png" alt="Bonne" width='500px'>
+    </a>
+    <h2>Van der Grinten Projection</h2>
+    <p>Polyconic projection with distortion at the poles and curved meridians.</p>
+    <a href=".//maps/vandergrinten.png">
+    <img src=".//maps/vandergrinten.png" alt="Van der Grinten" width='500px'>
+    </a>
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
 </body>
