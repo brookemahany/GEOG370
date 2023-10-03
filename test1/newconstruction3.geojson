@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "newconstruction3",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6348" } },
+"features": [
+
+]
+}
