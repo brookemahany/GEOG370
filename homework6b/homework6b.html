@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6b</title>
+    <style>
+        
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #bbb1a2;
+            color: #0a460a;
+            text-align: left;
+            font-size: xx-large;
+        }
+        h1{
+            display: block;
+        }
+
+        img{
+            height: 100vmin;
+            width: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Homework 6b</h1>
+    <p>Using the American Community Survey data on <a href = https://data.census.gov/table/ACSDP1Y2022.DP03?t=Industry&g=040XX00US42,42$0600000">Selected Economic Characteristics (DPO3)</a>, I created a ratio that shows 
+        the percentage of the over 16, working population in each county currently in the manufacturing industry. I did this 
+        by putting the amount of people in the manufacturing column over the total workforce column in the QGIS field 
+        calculator. I used the function ("manu_emp"/"total_emp")*10 so that the data displayed would be whole numbers. 
+    </p>
+    <a href=".//penn_quan.png">
+        <img src=".//penn_quan.png" />
+        </a>
+    <p>This map uses the Equal Count (Quantile) method of classifying data in QGIS. The Quantile method of classification divides up the data so that
+        each class as an equal amount of features. The pros of this method are that it neatly divides the data, and it can be good for evenly distributed
+        data. However, there is not a lot of nuance in the sense that it can group a wide range of values into a single class. It might also put similar
+        values in different classes.
+    </p>
+     <a href=".//penn_eq_int.png">
+         <img src=".//penn_eq_int.png" />
+        </a>
+    <p>This map uses the Equal Interval method of classifying data in QGIS. The Equal Interval method puts the data into different classes with the same ranges.
+        For example, in the Quantile map, there is a class from 3-5 (range of 2) and the next class is from 5-6.2 (range of 1.2). However, all the classes in this map have
+        a range of 1.6. The pros of this method are that it easily allows you to easily show continuous data. The disadvantage of this classification system is that
+        there also might be too many values in a class. This is good for when you have a lot of data which several large differences in values. However, this data may not be 
+        good for differentiating extrenes from each other, and may put a wide range of higher numbers, for example, in the same class.
+    </p>
+     <a href=".//penn_nat.png">
+        <img src=".//penn_nat.png" />
+        </a>
+ <p>This map uses the Natural Breaks method, which is used by dividing up obvious groups in the data. 
+    <a href="https://raw.githubusercontent.com/brookemahany/GEOG370/main/homework6b/manupenn.csv">.csv data</a>
+    </p>
+ <p>
+    <a href="https://github.com/brookemahany/GEOG370/blob/main/homework6b/pennmanu.geojson">state geoJSON</a>
+    </p>
+</body>
+</html>
